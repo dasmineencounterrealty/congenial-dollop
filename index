@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reference Copy – Completed Agreement</title>
+<style>
+  /* Reset */
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #004080, #1e5fa8);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .header p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+
+  /* PDF container */
+  .pdf-container {
+    flex: 1;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #e8edf4;
+  }
+  iframe, object {
+    width: 100%;
+    height: 80vh;
+    border: none;
+  }
+
+  /* Footer / disclaimer */
+  .disclaimer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    padding: 15px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header h1 { font-size: 1.5rem; }
+    .header p { font-size: 0.9rem; }
+    .pdf-container { width: 95%; }
+    iframe, object { height: 70vh; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Reference Copy of Completed Agreement</h1>
+  <p>For viewing purposes only – read-only document</p>
+</div>
+
+<div class="pdf-container">
+  <!-- Primary: iframe using Worker URL -->
+  <iframe src="https://rajones.co/Reference_OC_Agreement_27.pdf" frameborder="0"></iframe>
+  <!-- Fallback: object tag for mobile Safari / old browsers -->
+  <object data="https://rajones.co/Reference_OC_Agreement_27.pdf" type="application/pdf">
+    <p>Your browser does not support inline PDFs. <a href="https://rajones.co/Reference_OC_Agreement_27.pdf" target="_blank">Click here to view the PDF</a>.</p>
+  </object>
+</div>
+
+<div class="disclaimer">
+  This PDF is a completed DocuSign agreement for reference only. Redistribution or modification is not permitted.
+</div>
+
+</body>
+</html>
